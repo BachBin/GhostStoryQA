@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Strory</title>
+    <!-- Include Font Awesome for copy icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab active" data-tab="hanh-tu-lenh" role="tab" aria-selected="true" aria-controls="hanh-tu-lenh">Hành Tửu Lệnh</div>
+        <div class="tab" data-tab="thi-huong" role="tab" aria-selected="false" aria-controls="thi-huong">Thi Hương, Thi Hội, Thi Đình</div>
+        <div class="tab" data-tab="bao-linh-don" role="tab" aria-selected="false" aria-controls="bao-linh-don">Bảo Linh Đơn</div>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content active" id="hanh-tu-lenh" role="tabpanel" aria-labelledby="hanh-tu-lenh-tab">
+        <h1>Hành Tửu Lệnh</h1>
+        <input class="searchInput" type="text" id="searchInput1" placeholder="Search questions..." onkeyup="searchFunction('searchInput1', 'faqList1')" aria-label="Search questions in Hành Tửu Lệnh">
+        <ul id="faqList1">
+            <!-- Questions will be populated dynamically -->
+        </ul>
+    </div>
+
+    <div class="tab-content" id="thi-huong" role="tabpanel" aria-labelledby="thi-huong-tab">
+        <h1>Thi Hương, Thi Hội, Thi Đình</h1>
+        <input class="searchInput" type="text" id="searchInput2" placeholder="Search questions..." onkeyup="searchFunction('searchInput2', 'faqList2')" aria-label="Search questions in Thi Hương, Thi Hội, Thi Đình">
+        <ul id="faqList2">
+            <!-- Questions will be populated dynamically -->
+        </ul>
+    </div>
+
+    <div class="tab-content" id="bao-linh-don" role="tabpanel" aria-labelledby="bao-linh-don-tab">
+        <h1>Bảo Linh Đơn</h1>
+        <input class="searchInput" type="text" id="searchInput3" placeholder="Search questions..." onkeyup="searchFunction('searchInput3', 'faqList3')" aria-label="Search questions in Bảo Linh Đơn">
+        <ul id="faqList3">
+            <!-- Questions will be populated dynamically -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
