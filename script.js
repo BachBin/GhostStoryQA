@@ -110,7 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
       textarea.select();
       document.execCommand("copy");
       document.body.removeChild(textarea);
-      alert("Đã sao chép đáp án!");
     }
   
     /**
